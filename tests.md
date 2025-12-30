@@ -132,3 +132,21 @@ Sprawdzenie zachowania FSM w trybie SAFE.
 Wszystkie testy zakończyły się wynikiem pozytywnym.
 System działa zgodnie z założeniami projektowymi i spełnia
 wymagania funkcjonalne projektu semestralnego.
+
+
+## Testy jednostkowe (PlatformIO Test)
+
+Projekt zawiera testy jednostkowe w języku C++ z wykorzystaniem wbudowanego mechanizmu
+PlatformIO Test oraz frameworka Unity.
+
+Testy uruchamiane są poleceniem:
+
+    pio test
+
+Ze względu na brak fizycznej płytki ESP32 oraz ograniczenia środowiska emulowanego (Wokwi),
+etap wykonania testów runtime na urządzeniu docelowym nie jest możliwy.
+Proces testowy potwierdza jednak poprawną kompilację testów, ich integrację z projektem
+oraz poprawność konfiguracji środowiska testowego.
+
+Testy funkcjonalne oraz weryfikacja logiki aplikacji (FSM, reakcje na przycisk, tryb SAFE)
+realizowane są w emulatorze Wokwi podczas demonstracji działania projektu.
